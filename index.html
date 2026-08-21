@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter your Location" class="input-box">
+                <button class="search-button" id="searchBtn">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCLnLrOyuwF6akyVSROnwWohA9dwodnYLiHw&s" alt="Search" width="15" height="15">
+                </button>
+            </div>
+        </div>
+        
+        <div class="weather-body">
+            <img src="https://i.pinimg.com/736x/46/99/ed/4699ed62b71ce4c2b51f33c4eb140f63.jpg" alt="weather image" class="weather-img">
+            <div class="weather-box">
+                <p id="temperature" class="temperature">0<sup>°C</sup></p>
+                <p id="description" class="description"></p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <img src="https://psdgraphics.com/wp-content/uploads/2010/01/droplet-icon.jpg" class="humidity-img">
+                    <div class="text">
+                        <span id="humidity">0%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <img src="https://npr.brightspotcdn.com/dims4/default/a9257ca/2147483647/strip/true/crop/800x450+0+70/resize/1200x675!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F9c%2Fcb%2F37e1df654eb986102363d6cba431%2Fwind-istock-diane555.jpg" class="wind-img">
+                    <div class="text">
+                        <span id="wind-speed">0Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
